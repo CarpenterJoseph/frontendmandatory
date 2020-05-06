@@ -14,7 +14,7 @@ function generateMovies(movieData){
         //var movie = movieData[0];
         async function getOMDBData(){
             //careful
-            const response = await fetch("http://www.omdbapi.com/?t=" + movie.Title + "&apikey=" + apiKey);
+            const response = await fetch("https://www.omdbapi.com/?t=" + movie.Title + "&apikey=" + apiKey);
             const data = await response.json();
             console.log(data);
             var li = document.createElement("li");
