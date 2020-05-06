@@ -1,0 +1,44 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#movie-container {
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+        and if we allow the items to wrap 
+    * Remember this is the same as:
+    * flex-direction: row;
+    * flex-wrap: wrap;
+    */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#movie-container h3 {
+    font-size: 2em;
+    text-align: center;
+}
+
+#movie-container li{
+    background: tomato;
+    padding: 15px;
+    width: 400px;
+    margin-top: 10px;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+}
+
+#movie-container iframe{
+    padding-left: 50px;
+}
